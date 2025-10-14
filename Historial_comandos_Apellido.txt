@@ -1,0 +1,226 @@
+pwd
+git clone https://github.com/sofiasartori/UTN-FRA_SO_Examenes
+sudo apt install tree
+sudo apt update
+sudo chmod +x UTN-FRA_SO_Examenes/script_Precondicion.sh 
+sudo ./UTN-FRA_SO_Examenes/script_Precondicion.sh
+source ~/.bashrc
+ls -l
+git clone https://github.com/XaviJMF/Recu_TP_AySO.git
+cd Recu_TP_AySO/
+touch Punto_{A..F].sh
+cd ..
+tree Recu_TP_AySO/
+sudo apt install tree
+tree Recu_TP_AySO/
+cd Recu_TP_AySO/
+rm Punto_\{A..F\].sh 
+touch Punto_{A..F}.sh
+cd ..
+tree Recu_TP_AySO/
+cd /home/
+ls -l
+sudo mkdir -p datos/{textos/{libros,revistas},videos/{peliculas,series}}
+tree datos/
+cat << EOF > vagrant/Recu_TP_AySO/Punto_A
+#Se crean los directorios con el siguiente comando de una sola vez
+sudo mkdir -p datos/{textos/{libros,revistas},videos/{peliculas,series}}
+EOF
+
+cd vagrant/Recu_TP_AySO/
+git status
+ls -l
+rm Punto_A
+cat << EOF > Punto_A.sh
+#Se crean los directorios con el siguiente comando de una sola vez
+sudo mkdir -p datos/{textos/{libros,revistas},videos/{peliculas,series}}
+EOF
+
+ls -l
+git add Punto_A.sh
+git comit -m "Agregado el comentario al archivo Punto_A.sh"
+git commit -m "Agregado el comentario al archivo Punto_A.sh"
+git config --global user.name "Javier"
+git config --global user.email "javierfm0416@gmail.com"
+git commit -m "Agregado el comentario al archivo Punto_A.sh"
+git status
+git push
+ssh-keygen
+ssh-keygen -t rsa -b 4096 -C "javierfm0416@gmail.com"
+cat ~/.ssh/id_ed25519.pub
+cd ..
+cat ~/.ssh/id_ed25519.pub
+pwd
+ls -l
+cd /home/
+cat vagrant/.ssh/id_ed25519.pub
+cd vagrant/
+ssh-keygen
+cat ~/.ssh/id_ed25519.pub
+git remote add origin https://github.com/XaviJMF/Recu_TP_AySO.git
+git init
+git remote add origin https://github.com/XaviJMF/Recu_TP_AySO.git
+git status
+pwd
+cd UTN-FRA_SO_Examenes/
+git status
+ls -l
+cd ..
+cd Recu_TP_AySO/
+git status
+git push
+ssh -t git@github.com
+ssh-keygen -t ed25519 c "javierfm0416@gmail.com"
+ssh-keygen -t ed25519 -c "javierfm0416@gmail.com"
+ssh-keygen -t ed25519 -C "javierfm0416@gmail.com"
+ls -l
+cd ..
+ls -l
+cd /home/
+ls -l
+ls -l vagrant/
+cd vagrant/
+cd ~/.ssh
+ls -lñ
+ls -l
+cat id_ed25519.pub
+cd /home/vagrant/Recu_TP_AySO/
+git status
+git push
+git -master push
+git remote -v
+git remote set-url origin git@github.com:XaviJMF/Recu_TP_AySO.git
+git remote -v
+git push
+cd /home/
+ls -l
+history 
+sudo useradd -m -s /bin/bash p1c1_2024_u1
+sudo passwd p1c1_2024_u1 
+sudo group p1c1_2024_g1
+sudo groupadd p1c1_2024_g1
+sudo usermod -aG p1c1_2024_g1 p1c1_2024_u1
+sudo chown p1c1_2024_u1:p1c1_2024_g1 datos/
+ls -l
+sudo chmod 750 datos/
+sudo chmod -R 750 datos/
+sudo chown -R p1c1_2024_u1:p1c1_2024_g1 datos/
+su - p1c1_2024_u1 
+cat << EOF > vagrant/Recu_TP_AySO/Punto_B.sh
+#Crear usuario y asignarle una clave (clave1)
+sudo useradd -m -s /bin/bash p1c1_2024_u1
+sudo passwd p1c1_2024_u1
+#Crear el grupo y luego asignarlo al usuario creado
+sudo groupadd p1c1_2024_g1
+sudo usermod -aG p1c1_2024_g1 p1c1_2024_u1
+#Asignar nuevo propietario y grupo a la carpeta "datos/" y cambiar los permisos
+sudo chown -R p1c1_2024_u1:p1c1_2024_g1 datos/
+sudo chmod -R 750 datos/
+#Crear desde el usuario un archivo con salida "whoami" en la carpeta "datos/"
+su - p1c1_2024_u1
+clave1
+cd /home/datos/
+whoami > validar1.txt
+cat validar1.txt
+EOF
+
+git add Punto_B.sh
+cd vagrant/Recu_TP_AySO/
+git add Punto_B.sh
+git commit -m  "Agregado el comentario al archivo Punto_B.sh"
+git push
+cd /home/
+sudo useradd -m -s /bin/bash p1c1_2024_u2
+sudo passwd p1c1_2024_u2
+sudo groupadd p1c1_2024_Todos
+sudo usermod -aG p1c1_2024_Todos p1c1_2024_u2
+sudo usermod -aG p1c1_2024_Todos p1c1_2024_u1
+ls -l
+sudo chown :p1c1_2024_Todos datos/
+sudo chown -R :p1c1_2024_Todos datos/
+sudo chmod -R g+rw datos/
+sudo chmod 714 datos/
+su - p1c1_2024_u2
+ls -l datos/
+cat datos/validar1.txt
+history
+cat << EOF > vagrant/Recu_TP_AySO/Punto_C.sh
+#Creamos el nuevo usuario y le asignamos su clave (clave1)
+sudo useradd -m -s /bin/bash p1c1_2024_u2
+sudo passwd p1c1_2024_u2
+#Creamos el nuevo grupo
+sudo groupadd p1c1_2024_Todos
+#Agregamos ambos usuarios al grupo
+sudo usermod -aG p1c1_2024_Todos p1c1_2024_u1
+sudo usermod -aG p1c1_2024_Todos p1c1_2024_u2
+#Modificamos el grupo propietario y luego los permisos
+sudo chown -R :p1c1_2024_Todos datos/
+sudo chmod -R 714 datos/
+#Entramos al segundu usuario para realizar el id
+su - p1c1_2024_u2
+clave1
+cd /home/datos/
+#Lo modificamos
+id >> validar1.txt
+cat validar1.txt
+#Verificamos datos y permisos
+ls -l /datos
+cat datos/validar1.txt
+EOF
+
+cd vagrant/Recu_TP_AySO/
+git add Punto_C.sh
+git commit -m  "Agregado el comentario al archivo Punto_C.sh"
+git push
+cd /home/
+sudo mkdir -p Ejercicio_D/{rx/{lotes_{1..20},extras_{1..100}},tx/lotes_{1..20}}
+tree Ejercicio_D/ --noreport | pr -T -s' ' -w 80 --column 4
+cd vagrant/Recu_TP_AySO/
+cat << EOF > Punto_D.sh 
+#Creamos los directorios en un solo comando
+sudo mkdir -p Ejercicio_D/{rx/{lotes_{1..20},extras_{1..100}},tx/lotes_{1..20}}
+EOF
+
+git add Punto_D.sh 
+git commit -m  "Agregado el comentario al archivo Punto_D.sh"
+git push
+cd /home/
+sudo mkdir -p Punto_E
+ls -l
+sudo grep "MemTotal" /proc/meminfo > Punto_E/Filtro_basico.txt
+cd Punto_E/
+sudo grep "MemTotal" /proc/meminfo > Filtro_basico.txt
+grep "MemTotal" /proc/meminfo > Punto_E/Filtro_basico.txt
+grep "MemTotal" /proc/meminfo > Filtro_basico.txt
+cd ..
+grep "MemTotal" /proc/meminfo > Punto_E/Filtro_basico.txt
+sudo chmod 777 Punto_E/
+grep "MemTotal" /proc/meminfo > Punto_E/Filtro_basico.txt
+grep "model name" /proc/cpuinfo >> Punto_E/Filtro_basico.txt
+cat Punto_E/Filtro_basico.txt 
+sed -i "$d" Punto_E/Filtro_basico.txt 
+cat Punto_E/Filtro_basico.txt 
+cd Punto_E/
+sed -i "$d" Filtro_basico.txt 
+cat Filtro_basico.txt 
+cd /home/vagrant/Recu_TP_AySO/
+cat << EOF > Punto_E.sh 
+#Creamos el directorio donde se guardara la informacion
+sudo mkdir -p Punto_E
+#Luego seleccionamos con grep la informacion que deseamos que unicamente se guarde en el texto
+grep "MemTotal" /proc/meminfo > Punto_E/Filtro_basico.txt
+grep "model name" /proc/cpuinfo >> Punto_E/Filtro_basico.txt
+EOF
+
+Git add Punto_E.sh 
+git commit -m  "Agregado el comentario al archivo Punto_E.sh"
+git add Punto_E.sh 
+git commit -m  "Agregado el comentario al archivo Punto_E.sh"
+git push
+cd /home/
+cd vagrant/Recu_TP_AySO/
+history -a
+ls -l
+cd /home/
+ls -l
+history -a
